@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cee2a3a2b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./Timer/style.css" />
+    <title>Timer</title>
+  </head>
+  <body>
+    <header>
+      <nav class="flex spacebetween">
+        <div class="left flex">
+          <i class="fa-regular fa-clock"></i>TIMER
+        </div>
+        
+      </nav>
+    </header>
+    <div class="instructionButton">
+      <button id="instruction-activate" onclick="window.location.href='./stopwatchindex.html';">click here for STOPWATCH</button>
+      
+    </div>
+    <div class="wrapper flex">
+      <div class="box" id="days">
+        <div class="count" id="dayval">00</div>
+        <div class="lable">Days</div>
+        <input type="text" id="daysInput" placeholder="00"/>
+      </div>
+      <div class="box" id="hours">
+        <div class="count" id="hourval">00</div>
+        <div class="lable">Hours</div>
+        <input type="text" id="hoursInput" placeholder="00"/>
+      </div>
+      <div class="box" id="minutes">
+        <div class="count" id="minval">00</div>
+        <div class="lable">Minutes</div>
+        <input type="text" id="minutesInput" placeholder="00"/>
+      </div>
+      <div class="box" id="seconds">
+        <div class="count" id="secval">00</div>
+        <div class="lable">Seconds</div>
+        <input type="text" id="secondsInput"placeholder="00"/>
+      </div>
+    </div>
+    <div class="buttons flex">
+      <button id="setTime">Set Timer</button>
+      <button id="startResume">Start/Resume</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+    
+    </div>
+  </body>
+  <script src="./Timer/script.js"></script>
+</html>
